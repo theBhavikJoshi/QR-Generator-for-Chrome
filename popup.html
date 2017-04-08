@@ -5,19 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>QR Generator</title>
-    <script type="text/javascript" src="qrcode.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
     <script type="text/javascript" src="popup.js"></script>
 
     <style>
+        body {
+            height: 250px;
+            width: 200px;
+            background-color: #AE6CE1;
+        }
         #qrCode {
-            height: 100px;
-            width: 100px;
+            height: 140px;
+            width: 140px;
+            margin: 0 auto;
+            margin-top: -8%;
+            border: 5px solid #84E83F;
+        }
+        #link {
+            text-align: center;
+            width: 200px;
         }
     </style>
 </head>
 <body>
+    <div>
+        <h3>QR code : </h3>
+        <br>
+    </div>
     <div id="qrCode">
         
     </div>
+    <p id="link"></p>
 </body>
 </html>
